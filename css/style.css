@@ -42,6 +42,7 @@ body {
     margin: 0;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 16px;
+    line-height: 175%;
     font-weight: normal;
     font-style: normal;
     color: #000;
@@ -58,7 +59,8 @@ a {
 }
 
 .header__nav,
-.intro {
+.intro,
+.services {
     max-width: 1249px;
     margin: 0 auto;
 }
@@ -138,13 +140,17 @@ a {
     margin-right: 152px;
 }
 
-.intro__content > a {
-    align-self: flex-start;
+.button {
+    box-sizing: border-box;
+    display: inline-block;
+    /* align-self: flex-start; */
     color: #fff;
     background-color: #FF2D2D;
     width: 227px;
+    /* height: 55px; */
     padding: 15px 0;
     text-align: center;
+    /* vertical-align: center; */
     font-size: 18px;
     font-weight: 700;
     line-height: 188%;
@@ -152,7 +158,81 @@ a {
     margin-top: auto;
 }
 
+.button:hover {
+    color: #FF2D2D;
+    background-color: #fff;
+    border: 2px solid #FF0000;
+}
+
 .intro__image {
     width: 551px;
     height: 356px;
+}
+
+/* services */
+
+.services {
+    display: flex;    
+    padding: 108px 0 98px;
+    border-bottom: #ECECEC solid 5px;
+}
+
+.services__content {
+    width: 50%;
+    margin-right: 101px;
+}
+
+.services__content > h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 43px;
+    line-height: 131%;
+    font-weight: 700;
+    margin-bottom: 50px;
+
+}
+
+.services__content > p {
+    margin-bottom: 64px;
+}
+
+
+.services__items {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.serveces__item {
+    width: 270px;
+    margin-bottom: 52px;
+    margin-right: 17px;
+}
+
+.serveces__item:nth-of-type(2n) {
+    margin-right: 0;
+}
+
+.serveces__item > h3::before {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.service__management::before {
+    content: url('../images/service1.svg');
+}
+
+.service__design::before {
+    content: url('../images/service2.svg');
+}
+
+.service__branding::before {
+    content: url('../images/service3.svg');
+}
+
+.service__animation::before {
+    content: url('../images/service4.svg');
 }
