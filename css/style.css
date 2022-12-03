@@ -51,6 +51,11 @@ body {
 
 a {
     text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style-type: none;
 }
 
 .bg,
@@ -60,7 +65,8 @@ a {
 
 .header__nav,
 .intro,
-.services {
+.services,
+.feature {
     max-width: 1249px;
     margin: 0 auto;
 }
@@ -89,7 +95,6 @@ a {
 .menu__item {
     display: flex;
     align-items: center;
-    list-style-type: none;
     padding: 23px;
 
 }
@@ -143,14 +148,11 @@ a {
 .button {
     box-sizing: border-box;
     display: inline-block;
-    /* align-self: flex-start; */
     color: #fff;
     background-color: #FF2D2D;
     width: 227px;
-    /* height: 55px; */
     padding: 15px 0;
     text-align: center;
-    /* vertical-align: center; */
     font-size: 18px;
     font-weight: 700;
     line-height: 188%;
@@ -174,6 +176,7 @@ a {
 .services {
     display: flex;    
     padding: 108px 0 98px;
+    margin-bottom: 104px;
     border-bottom: #ECECEC solid 5px;
 }
 
@@ -236,3 +239,80 @@ a {
 .service__animation::before {
     content: url('../images/service4.svg');
 }
+
+/* feature */
+
+.feature {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    margin-bottom: 122px;
+
+}
+
+.feature__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature__content h2 {
+    font-size: 42px;
+    line-height: 0;
+    letter-spacing: 0.3834px;
+    text-transform: uppercase;
+
+}
+
+.feature__content p {
+    max-width: 537px;
+    text-align: center;
+    margin-bottom: 33px;
+}
+
+.line {
+    width: 134px;
+    height: 5px;
+    background-color: #FF2D2D;
+    border: none;
+}
+
+.filter {
+    display: flex;
+    margin: 86px auto 55px;
+    max-width: 922px;
+    justify-content: space-between;
+}
+
+.filter__link {
+    /* display: inline-block; */
+    font-size: 22px;
+    line-height: 109%;
+    font-weight: 600;
+    letter-spacing: 0.22px;
+    text-transform: uppercase;
+}
+
+.filter__link:not(:last-of-type) {
+    margin-right: 27px;
+}
+
+.filter__link:hover {
+    color: #FF2D2D;
+}
+
+.products {
+    text-align: center;
+}
+
+.products img {
+    min-width: 250px;
+	max-width: 300px;
+	height: 290px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+
+/* Team */gi
