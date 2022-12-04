@@ -66,7 +66,8 @@ li {
 .header__nav,
 .intro,
 .services,
-.feature {
+.feature,
+.team {
     max-width: 1249px;
     margin: 0 auto;
 }
@@ -284,6 +285,10 @@ li {
     justify-content: space-between;
 }
 
+.filter__active {
+    color: #FF2D2D;
+}
+
 .filter__link {
     /* display: inline-block; */
     font-size: 22px;
@@ -307,7 +312,7 @@ li {
 
 .products img {
     min-width: 250px;
-	max-width: 300px;
+	max-width: 290px;
 	height: 290px;
     object-fit: cover;
     margin-bottom: 15px;
@@ -315,4 +320,129 @@ li {
 }
 
 
-/* Team */gi
+/* Team */
+
+.team {
+    margin-bottom: 106px;
+}
+
+.team__header > h2 {
+    font-size: 42px;
+    line-height: 0%;
+    letter-spacing: 0.3834px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.team__header > p {
+    margin-bottom: 37px;
+    max-width: 479px;
+}
+
+.team__line {
+    margin-bottom: 66px;
+    margin-left: 0;
+}
+
+.team__members {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.selectedFoto {
+    margin-right: 60px;
+    width: 340px;
+    height: 460px;
+    object-fit: cover;
+}
+
+.team__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.selected_member {
+    margin-bottom: 59px;
+}
+
+.selected_member > h3 {
+    font-size: 30px;
+    line-height: 0;
+    letter-spacing: 0.275265px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.selected_member > p {
+    max-width: 663px;
+    margin-bottom: 46px;
+}
+
+.member_links {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.member_links a {
+    margin-right: 15px;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: 0.9px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.member_links a:hover {
+    text-decoration: underline;
+}
+
+
+.members {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.member {
+    position: relative;
+    background-color: #FF3F40;
+}
+
+.member:not(:last-of-type) {
+    margin-right: 15px;
+}
+
+.member__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 37px;
+    font-size: 18px;
+    line-height: 0;
+    letter-spacing: 0.165159px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #000;
+    opacity: 0.5;
+    visibility: hidden;
+}
+
+.member:hover .member__name {
+    visibility: visible;
+}
+
+.member img {
+    display: block;
+    width: 199px;
+    height: 217px;
+    object-fit: cover;
+}
+
+/* Subscribe */
