@@ -76,7 +76,8 @@ hr {
 .intro,
 .services,
 .feature,
-.team {
+.team,
+.footer {
     max-width: 1249px;
     margin: 0 auto;
     padding-left: 1vw;
@@ -642,6 +643,26 @@ hr {
 
 footer {
     margin-top: 108px;
-    background: #000;
-    color: #fff;
+    background: #313030;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 111px;
+}
+
+.footer > p {
+    color: #B8B8B8;
+    font-size: 16px;
+    line-height: 162%;
+}
+
+.links {
+    display: inline-block;
+}
+
+.links a:not(:last-of-type) {
+    margin-right: 18px;
 }
