@@ -459,14 +459,12 @@ hr {
 /* Subscribe */
 
 .subscribe {
-    /* margin: 0 auto; */
     padding: 151px 0 141px;
     margin-bottom: 104px;
     background-color: #000;
     color: #fff;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -501,33 +499,24 @@ hr {
     color: #2C2C2C;
 }
 
-
 .form .button {
     text-transform: uppercase;
     border-style: none;
     cursor: pointer;
-
 }
 
 /* feedback */
 
 .feedback_contacts {
-    /* max-width: 1249px;
-    margin: 0 auto; */
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    display: grid;
+    grid-template-columns: auto minmax(auto, 839px) minmax(auto, 410px) auto;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:    ".    content .        .    "
+   	                        "left form    contacts right";
 }
 
-.left-block,
-.right-block {
-    background-color: #2C2C2C;
-    flex: 1 1 auto;
-}
-
-.feedback {
-    max-width: 720px;
-    margin-right: 106px;
+.left-block {
+    grid-area: left;
 }
 
 .feedback__content {
@@ -535,6 +524,7 @@ hr {
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
+    grid-area: content;
 }
 
 .feedback__content h2 {
@@ -547,7 +537,6 @@ hr {
 
 .feedback__content p {
     margin-bottom: 58px;
-
 }
 
 .feedback_line {
@@ -561,6 +550,8 @@ hr {
     grid-template-rows: 70px 252px ;
     row-gap: 43px;
     column-gap: 52px;
+    grid-area: form;
+    margin-right: 109px;
 }
 
 .feedback_name {
@@ -620,6 +611,7 @@ hr {
     padding: 159px 183px 140px 79px;
     background-color: #2D2D2D;
     color: #fff;
+    grid-area: contacts;
 }
 
 .contacts > h2 {
@@ -627,6 +619,7 @@ hr {
     line-height: 189%;
     letter-spacing: 0.317046px;
     text-transform: uppercase;
+    margin-bottom: 31px;
 }
 
 .contacts > address {
@@ -636,30 +629,16 @@ hr {
     font-style: normal;
 }
 
+.contacts p:not(:last-of-type) {
+    margin-bottom: 20px;
+}
 
+.right-block {
+    background-color: #2D2D2D;
+    grid-area: right;
+}
 
-/* .contacts::after {
-    display: block;
-    position: absolute;
-    transform: translateX(100%);
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    content: ',';
-    background-color: rgb(37, 114, 88);
-} */
-
-
-
-
-
-
-
-
-
-
-
+/* footer */
 
 footer {
     margin-top: 108px;
