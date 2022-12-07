@@ -147,6 +147,7 @@ hr {
 
 .intro__content > h1 > span {
     word-break: break-all;
+    letter-spacing: 6px;
 }
 
 .intro__content > p {
@@ -180,6 +181,7 @@ hr {
 .intro__image {
     width: 551px;
     height: 356px;
+    box-shadow: 0px -10px 50px 0 #7c7c7c;
 }
 
 /* services */
@@ -660,7 +662,20 @@ footer {
 /* Responsive */
 
 /* laptop 1024 */
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1030px) {
+    .intro__content {
+        width: 50%;
+    }
+
+    .intro > a {
+        width: 50%;
+    }
+
+    .intro__image {
+        width: 100%;
+        height: auto;
+    } 
+    
     .member {
         margin-bottom: 1em;
     }
@@ -675,5 +690,8 @@ footer {
 }
 
 /* tablet 768 */
+
+
+/* mobile L 425 */
 
 
